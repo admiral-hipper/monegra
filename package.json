@@ -1,0 +1,40 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "yarn run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "yarn run development --watch",
+        "watch-poll": "yarn run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --disable-host-check --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "yarn run production",
+        "production": "rm -rf public/js/dist && cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js && rm -rf public/js/chunks && mv public/js/dist/css/app.css public/css/app.css && mv public/js/dist/js/app.js public/js/app.js && mv public/js/dist/js/chunks public/js/chunks && rm -rf public/js/dist"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.11.4",
+        "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+        "@babel/preset-env": "^7.11.0",
+        "@vue/babel-preset-app": "^4.5.4",
+        "axios": "^0.19",
+        "cross-env": "^7.0",
+        "laravel-mix": "^5.0.1",
+        "lodash": "^4.17.13",
+        "resolve-url-loader": "^3.1.1",
+        "sass": "^1.20.1",
+        "sass-loader": "^8.0.0",
+        "terser-webpack-plugin": "^4.1.0",
+        "vue": "^2.6.12",
+        "vue-template-compiler": "^2.6.12"
+    },
+    "dependencies": {
+        "core-js": "^3.6.5",
+        "gsap": "^3.5.0",
+        "laravel-vue-pagination": "^2.3.1",
+        "moment": "^2.28.0",
+        "sweetalert2": "^9.17.1",
+        "v-calendar": "^1.0.8",
+        "vue-ads-table-tree": "^2.4.2",
+        "vue-currency-input": "^1.22.3",
+        "vue-i18n": "^8.21.1",
+        "vue-router": "^3.4.3"
+    }
+}
