@@ -1,0 +1,26 @@
+.sidebar-nav #sidebarnav .sidebar-item.selected > .sidebar-link {
+    background: linear-gradient(to right, #FF8438, #FFDC00);
+}
+.ct-series-a .ct-bar,
+.ct-series-a .ct-line {
+  stroke: #fb8c00;
+}
+.stats .ct-series-a .ct-line,
+.stats .ct-series-a .ct-point {
+    stroke: #fb8c00;
+    stroke-width: 3px;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  /*color: #fff;*/
+  background: #fdc16a;
+}
+.nav-link{
+	color: #fdc16a ;
+}
+.nav-link:not(.active):hover{
+	color: #fb8c00;
+}
+
+
+/*5f76e8*/
