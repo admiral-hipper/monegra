@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Styles -->
-    <link rel="shortcut icon" href="{{ asset('lp/img/favicon.ico') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" type="image/x-icon">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -99,21 +99,7 @@
     <!--
     Scripts
     -->  
-    <script src="{{asset('assets/libs/jquery/dist/jquery.min.js')}}"></script>
-    <script src="{{asset('assets/libs/popper.js/dist/umd/popper.min.js')}}"></script>
-    <script src="{{asset('assets/libs/bootstrap/dist/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('jscopy/app-style-switcher.js')}}"></script>
-    <script src="{{asset('jscopy/feather.min.js')}}"></script>
-    <script src="{{asset('assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js')}}"></script>
-    <script src="{{asset('jscopy/sidebarmenu.js')}}"></script>
-    <script src="{{asset('jscopy/custom.min.js')}}"></script>
-    <script src="{{asset('assets/extra-libs/c3/d3.min.js')}}"></script>
-    <script src="{{asset('assets/extra-libs/c3/c3.min.js')}}"></script>
-    <script src="{{asset('assets/libs/chartist/dist/chartist.min.js')}}"></script>
-    <script src="{{asset('assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js')}}"></script>
-    <script src="{{asset('assets/extra-libs/jvector/jquery-jvectormap-2.0.2.min.js')}}"></script>
-    <script src="{{asset('assets/extra-libs/jvector/jquery-jvectormap-world-mill-en.js')}}"></script>
-    <script src="{{asset('jscopy/pages/dashboards/dashboard1.min.js')}}"></script>
+    
     <script>
         $(".preloader ").fadeOut();
 
@@ -121,7 +107,7 @@
     </script>
 
     <!-- App scripts -->
-    <script src="{{ mix('js/app.js') }}"></script>
+    <!-- <script src="{{ mix('js/app.js') }}"></script> -->
     <script>
         window.replainSettings = { id: '4753d969-f5ea-4aa7-a8aa-db33fe57e25a' };
         (function(u){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=u;
